@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Input Box Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #inputContainer {
+            text-align: center;
+        }
+
+        #inputBox {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        #submitButton {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="inputContainer">
+    <input type="text" id="inputBox" placeholder="Enter text...">
+    <button id="submitButton" onclick="submitInput()">Submit</button>
+</div>
+
+<script>
+    function submitInput() {
+        var inputValue = document.getElementById('inputBox').value;
+        alert('Input Value: ' + inputValue);
+        // You can perform further actions with the input value here
+    }
+</script>
+
+</body>
+</html>
