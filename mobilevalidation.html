@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function valid() {
+        let a = document.getElementById("mobilevalidation").value;
+    if(a=="")
+    {
+        document.getElementById("massage").innerHTML="please fill number";
+        return false;
+
+    }
+    if(isNaN(a)){
+        document.getElementById("massage").innerHTML="Only number";
+        return false;
+    }
+    if(a.length<10){
+        document.getElementById("massage").innerHTML="mobile number must be 10 digits";
+        return false;
+    }
+    if(a.length>10){
+        document.getElementById("massage").innerHTML="mobile number must be 10 digits";
+        return false;
+    }
+    }
+</script>
+<body>
+    <h1 style="text-align: center;">Mobile validation in java script</h1>
+    <form onsubmit="return valid()">
+    <label for="">Mobile Number:</label>
+    <input type="text"  id="mobilevalidation" value="">
+    <span id="massage"></span><br><br>
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>
