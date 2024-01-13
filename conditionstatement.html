@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >Conditional statements</h1>
+
+<script>
+    let a = prompt("hey whats your age")
+    a = Number.parseInt(a); //converting the string to number
+    if(a<0)
+    {
+        alert("this is an invalid age");
+    }
+    else if(a<9){
+        alert("your are a kid you can't driving now");
+    } 
+    else if(a<18 && a>=9)
+        {
+            alert("you can't driving sorry")
+        }
+        else{
+            alert("congratulations sir you can driving");
+        }
+    </script>
+
+
+</body>
+</html>
